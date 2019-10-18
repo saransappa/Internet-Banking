@@ -5,7 +5,12 @@ import java.io.*;
 import java.util.*;
 public class Login extends JFrame {
 	public Login() {
-		JFrame f=new JFrame("Login/SignUp");
+		Font f1 = new Font("Comic Sans MS",Font.BOLD | Font.ITALIC , 13);
+		Font f2 = new Font("Segoe UI Emoji",Font.BOLD  , 13);
+		Font f3 = new Font("Lucida Sans Unicode",Font.BOLD , 13);
+		Font f4 = new Font("Tahoma",Font.PLAIN , 13);
+
+		JFrame f=new JFrame("Login / SignUp");
 		JLabel l1=new JLabel("Username :");
 		JLabel l2=new JLabel("Password :");
 		JTextField tf1=new JTextField();
@@ -15,13 +20,19 @@ public class Login extends JFrame {
 		JButton b3 = new JButton("Exit");
 		l1.setBounds(40,10,100,30);
 		l1.setForeground(Color.blue);
+		l1.setFont(f1);
 		l2.setBounds(40,50,100,30);
 		l2.setForeground(Color.blue);
+		l2.setFont(f1);
 		tf1.setBounds(150,10,150,30);
+		tf1.setFont(f4);
 		pf.setBounds(150,50,150,30);
 		b1.setBounds(70,90,100,30);
 		b2.setBounds(220,90,100,30);
 		b3.setBounds(140,140,100,30);
+		b1.setFont(f2);
+		b2.setFont(f2);
+		b3.setFont(f2);
 		f.setSize(400,220);
 		f.setLayout(null);
 		f.setVisible(true);

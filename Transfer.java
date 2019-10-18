@@ -4,6 +4,11 @@ import java.awt.*;
 public class Transfer extends JFrame{
 	static String s1,s2,s3,s4;
 	public Transfer(String acc) {
+		Font f1 = new Font("Comic Sans MS",Font.BOLD | Font.ITALIC , 13);
+		Font f2 = new Font("Segoe UI Emoji",Font.BOLD  , 13);
+		Font f3 = new Font("Lucida Sans Unicode",Font.BOLD , 13);
+		Font f4 = new Font("Tahoma",Font.PLAIN , 13);
+
 		JFrame f = new JFrame("Transfer");
 		JLabel l1 = new JLabel("Beneficiary name: ");
 		JLabel l2 = new JLabel("Beneficiary account no.: ");
@@ -28,7 +33,7 @@ public class Transfer extends JFrame{
 		tf2.setBounds(250,70,250,20);
 		l4.setBounds(10,100,250,20);
 		tf3.setBounds(250,100,250,20);
-		l5.setBounds(90,130,400,20);
+		l5.setBounds(80,130,450,20);
 		
 		f.add(l1);
 		f.add(l2);
@@ -53,6 +58,17 @@ public class Transfer extends JFrame{
 		f.add(b2);
 		b1.setBackground(Color.green);
 		b2.setBackground(Color.PINK);
+		b1.setFont(f2);
+		b2.setFont(f2);
+		l1.setFont(f1);
+		l2.setFont(f1);
+		l3.setFont(f1);
+		l4.setFont(f1);
+		l5.setFont(f3);
+		tf1.setFont(f4);
+		tf2.setFont(f4);
+		tf3.setFont(f4);
+		tf4.setFont(f4);
 		f.setSize(550,350);
 		f.getContentPane().setBackground(Color.orange);
 		

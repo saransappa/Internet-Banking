@@ -7,17 +7,25 @@ import java.util.Scanner;
 public class OTP extends JFrame{
 	public OTP(String send,String rec,int amt) {
 		JFrame f = new JFrame("Enter OTP");
+		Font f1 = new Font("Comic Sans MS",Font.BOLD | Font.ITALIC , 13);
+		Font f2 = new Font("Segoe UI Emoji",Font.BOLD  , 13);
+		Font f3 = new Font("Lucida Sans Unicode",Font.BOLD , 13);
+		Font f4 = new Font("Tahoma",Font.PLAIN , 13);
+
 		ImageIcon img = new ImageIcon("C:\\Users\\saran\\OneDrive\\Desktop\\accounts\\logo.png");
 		f.setIconImage(img.getImage());
 		JLabel l1 = new JLabel("OTP :");
 		JTextField tf = new JTextField();
 		JButton b1 =new JButton("Submit");
 		JButton b2 = new JButton("Cancel");
+		b1.setFont(f2);
+		b2.setFont(f2);
 		f.setSize(300,130);
 		f.setVisible(true);
 		f.setLayout(null);
 		l1.setBounds(50,10,50,20);
 		tf.setBounds(110,10,80,20);
+		tf.setFont(f4);
 		b1.setBounds(40,40,80,20);
 		b2.setBounds(150,40,80,20);
 		b1.setBackground(Color.GREEN);
@@ -26,7 +34,7 @@ public class OTP extends JFrame{
 		f.add(tf);
 		f.add(b1);
 		f.add(b2);
-		f.getContentPane().setBackground(Color.white);
+		f.getContentPane().setBackground(Color.yellow);
 		Random r=new Random();
 		int pin= 100000 + (int)(r.nextDouble() * 99999);
 		System.out.println(pin);

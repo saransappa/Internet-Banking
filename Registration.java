@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import  java.io.*;
@@ -17,7 +18,11 @@ import javax.swing.JTextField;
 import java.util.Random;
 public class Registration {
 public Registration() {
-		
+		Font f1 = new Font("Comic Sans MS",Font.BOLD | Font.ITALIC , 13);
+		Font f2 = new Font("Segoe UI Emoji",Font.BOLD  , 13);
+		Font f3 = new Font("Lucida Sans Unicode",Font.BOLD , 13);
+		Font f4 = new Font("Tahoma",Font.PLAIN , 13);
+
 		JFrame f = new JFrame("Registration Form");
 		f.setSize(350, 480);
 		f.setVisible(true);
@@ -31,7 +36,7 @@ public Registration() {
 		l0.setBounds(110,10,100,50);
 		l0.setVisible(true);
 		f.add(l0);
-		
+		l0.setFont(f2);
 		f.getContentPane().setBackground(Color.cyan);
 		
 		JLabel l1 = new JLabel("Username :");
@@ -65,6 +70,7 @@ public Registration() {
 		tf.setBounds(130,55,150,23);
 		tf.setVisible(true);
 		f.add(tf);
+		tf.setFont(f4);
 		
 		JPasswordField pf1 = new JPasswordField();
 		pf1.setBounds(130,85,150,23);
@@ -86,7 +92,8 @@ public Registration() {
 		r2.setBounds(130,175,150,23);
 		r2.setVisible(true);
 		f.add(r2);
-		
+		r1.setBackground(Color.CYAN);
+		r2.setBackground(Color.CYAN);
 		ButtonGroup bg1 = new ButtonGroup();
 		bg1.add(r1);
 		bg1.add(r2);
@@ -96,6 +103,7 @@ public Registration() {
 		jcb1.setBounds(130,320,150,23);
 		jcb1.setVisible(true);
 		f.add(jcb1);
+		jcb1.setFont(f2);
 		
 		JLabel l7 = new JLabel("Submitted Successfully!");
 		l7.setBounds(95,200,200,40);
@@ -110,6 +118,7 @@ public Registration() {
 		JTextArea ta = new JTextArea();
 		ta.setBounds(130,200,200,100);
 		f.add(ta);
+		ta.setFont(f4);
 		
 		JLabel l9 = new JLabel("Phone No. : ");
 		l9.setBounds(50,350,100,30);
@@ -118,6 +127,7 @@ public Registration() {
 		JTextField tf1 = new JTextField();
 		tf1.setBounds(130,350,150,23);
 		f.add(tf1);
+		tf1.setFont(f4);
 		
 		JButton b2 = new JButton("Cancel");
 		b2.setBounds(190,400,75,25);
@@ -152,12 +162,24 @@ public Registration() {
 		b4.setVisible(false);
 		f.add(b4);
 		
-		
-		
 		JButton b1 = new JButton("Submit");
 		b1.setBounds(70,400,75,25);
 		b1.setVisible(true);
 		b1.setBackground(Color.GREEN);
+		b1.setFont(f2);
+		b2.setFont(f2);
+		b3.setFont(f2);
+		b4.setFont(f2);
+		l1.setFont(f1);
+		l2.setFont(f1);
+		l3.setFont(f1);
+		l4.setFont(f1);
+		l6.setFont(f1);
+		l7.setFont(f1);
+		l8.setFont(f1);
+		l9.setFont(f1);
+		r1.setFont(f3);
+		r2.setFont(f3);
 		b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String gend=new  String();

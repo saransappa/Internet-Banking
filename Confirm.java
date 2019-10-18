@@ -7,6 +7,11 @@ import java.util.Scanner;
 public class Confirm extends JFrame{
 	public Confirm(String acc) {
 		super.setVisible(false);
+		Font f1 = new Font("Comic Sans MS",Font.BOLD | Font.ITALIC , 13);
+		Font f2 = new Font("Segoe UI Emoji",Font.BOLD  , 13);
+		Font f3 = new Font("Lucida Sans Unicode",Font.BOLD , 13);
+		Font f4 = new Font("Tahoma",Font.PLAIN , 13);
+
 		JFrame f = new JFrame("Confirmation");
 		JLabel l1 = new JLabel("Beneficiary name: ");
 		JLabel l2 = new JLabel(Transfer.s1);
@@ -16,6 +21,14 @@ public class Confirm extends JFrame{
 		JLabel l6 = new JLabel(Transfer.s4);
 		JButton b1 = new JButton("Confirm");
 		JButton b2 = new JButton("Cancel");
+		l1.setFont(f1);
+		l2.setFont(f3);
+		l3.setFont(f1);
+		l4.setFont(f3);
+		l5.setFont(f1);
+		l6.setFont(f3);
+		b1.setFont(f2);
+		b2.setFont(f2);
 		ImageIcon img = new ImageIcon("C:\\Users\\saran\\OneDrive\\Desktop\\accounts\\logo.png");
 		f.setIconImage(img.getImage());
 		f.getContentPane().setBackground(Color.pink);
@@ -40,6 +53,7 @@ public class Confirm extends JFrame{
 		f.add(b2);
 		b1.setBackground(Color.GREEN);
 		b2.setBackground(Color.RED);
+		
 		b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {

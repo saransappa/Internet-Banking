@@ -5,12 +5,22 @@ import java.util.*;
 import java.awt.event.*;
 public class Home extends JFrame {
 	public Home(String acc) {
+		Font f1 = new Font("Comic Sans MS",Font.BOLD| Font.ITALIC , 13);
+		Font f2 = new Font("Segoe UI Emoji",Font.BOLD  , 13);
+		Font f3 = new Font("Lucida Sans Unicode",Font.BOLD , 13);
+		Font f4 = new Font("Tahoma",Font.PLAIN , 13);
+
 		JFrame f = new JFrame("Home");
 		JLabel l1 = new JLabel("Name : ");
 		JLabel l2 = new JLabel("Account No. : ");
 		JLabel l3 = new JLabel("Phone No. : ");
 		JLabel l4 = new JLabel("Adddress : ");
 		JLabel l5 = new JLabel("Balance  : ");
+		l1.setFont(f1);
+		l2.setFont(f1);
+		l3.setFont(f1);
+		l4.setFont(f1);
+		l5.setFont(f1);
 		JLabel l6 = new JLabel("");
 		JLabel l7 = new JLabel("");
 		JLabel l8 = new JLabel("");
@@ -18,6 +28,13 @@ public class Home extends JFrame {
 		JLabel l10 = new JLabel("");
 		JButton b1 = new JButton("Transfer");
 		JButton b2 = new JButton("Logout");
+		b1.setFont(f2);
+		b2.setFont(f2);
+		l6.setFont(f3);
+		l7.setFont(f3);
+		l8.setFont(f3);
+		l9.setFont(f3);
+		l10.setFont(f3);
 		ImageIcon img = new ImageIcon("C:\\Users\\saran\\OneDrive\\Desktop\\accounts\\logo.png");
 		f.setIconImage(img.getImage());
 		f.getContentPane().setBackground(Color.cyan);
