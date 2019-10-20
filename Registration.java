@@ -215,7 +215,7 @@ public Registration() {
 								int accno = 1000000000 + (int)(r.nextDouble() * 999999999);
 
 								FileWriter writer = new FileWriter(file);
-								writer.write(name+"\n"+pass+"\n"+gend+"\n"+coun+"\n"+phone+"\n"+accno+"\n"+"0"+"\n"+addr);
+								writer.write(name+"\n"+pass+"\n"+gend+"\n"+coun+"\n"+phone+"\n"+accno+"\n"+"2500"+"\n"+addr);
 								writer.close();
 							}
 							else {
