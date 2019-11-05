@@ -35,6 +35,9 @@ public class Login extends JFrame {
 		b1.setFont(f2);
 		b2.setFont(f2);
 		b3.setFont(f2);
+		b1.setMnemonic('l');
+		b2.setMnemonic('s');
+		b3.setMnemonic('x');
 		f.setSize(400,220);
 		f.setLayout(null);
 		f.setVisible(true);
