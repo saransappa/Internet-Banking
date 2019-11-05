@@ -26,7 +26,9 @@ public class Login extends JFrame {
 		l2.setFont(f1);
 		tf1.setBounds(150,10,150,30);
 		tf1.setFont(f4);
+		tf1.setToolTipText("Enter username.");
 		pf.setBounds(150,50,150,30);
+		pf.setToolTipText("Enter password.");
 		b1.setBounds(70,90,100,30);
 		b2.setBounds(220,90,100,30);
 		b3.setBounds(140,140,100,30);
